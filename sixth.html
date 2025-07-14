@@ -1,0 +1,40 @@
+<html>
+<head>
+<!DOCTYPE html>
+<html>
+<title>Quiz Question</title>
+<head><style>
+
+.whole-container
+{background-color: Pink;
+}
+.flex-container {
+ display: flex;
+ flex-wrap: nowrap; 
+ 
+ flex-direction: vertical;
+}
+.flex-container > button {
+ background-color: #0aaaff;
+ width:120px;
+ margin: 5px;
+ text-align: center;
+ line-height: 90px;
+ font-size: 25px;
+}
+</style>
+<title>HOMEWORK</title>
+</head>
+<body>
+<div class="whole-container">
+Which of the following is the biggest forest?
+<div class="flex-container">
+  <button>Black Forest</button>
+  <button>Sherwood Forest</button>
+  <button id="correct" onclick="document.getElementById('correct').style.backgroundImage='url("checkmark.gif")'">Amazon Rainforest</button>
+  <button>Daintree Forest</button>  
+</div>
+</div>
+<a href ="index.html">link back to html</a>
+</body>
+</html>
