@@ -1,0 +1,23 @@
+{
+  "name": "sample-website",
+  "version": "1.0.0",
+  "description": "Korean American Quiz",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chelseahwang101/firstwebsite.git"
+  },
+  "author": "Chelsea Hwang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chelseahwang101/firstwebsite/issues"
+  },
+  "homepage": "https://github.com/chelseahwang101/firstwebsite#readme",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
