@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quiz Question</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .quiz-container {
+            width: 400px;
+            margin: 20px auto;
+            border: white;
+            padding: 15px;
+            background-color: pink;
+        }
+
+        .choices-container {
+            margin-top: 10px;
+        }
+
+        .choice {
+            display: flex;
+            margin-bottom: 8px;
+            background-color: white;
+            border: white;
+            padding: 5px;
+        }
+
+        .choice-button {
+            width: 40px;
+            height: 40px;
+            background-color: lightblue;
+            text-align: center;
+            line-height: 40px;
+            font-weight: bold;
+            margin-right: 8px;
+        }
+
+        .choice-image {
+            flex: 1;
+            background-color: white;
+            text-align: center;
+            line-height: 40px;
+            color: pink;
+        }
+    </style>
+</head>
+<body>
+
+<div class="quiz-container">
+    <h3>What is the significance of the Korean American Day, observed on January 13?</h3>
+
+    <div class="choices-container">
+        <div class="choice" id="choice1">
+            <div class="choice-button">A</div>
+            <div class="choice-image" id="choice-image1">Commemorates Korean War veterans</div>
+        </div>
+        <div class="choice" id="choice2">
+            <div class="choice-button">B</div>
+            <div class="choice-image" id="choice-image2">Celebrates Korea's independence</div>
+        </div>
+        <div class="choice" id="choice3">
+            <div class="choice-button">C</div>
+            <div class="choice-image"  id="choice-image3">Marks the arrival of first Korean immigrants in Hawaii</div>
+        </div>
+        <div class="choice" id="choice4">
+            <div class="choice-button">D</div>
+            <div class="choice-image"  id="choice-image4">Honors the first Korean American mayor</div>
+        </div>
+    </div>
+</div>
+
+<script>
+var chosen = false ;
+document.getElementById("choice1").addEventListener("click", function () {
+	    if (chosen) {return;}
+            document.getElementById("choice-image1").innerText = "X";
+	    chosen = true;
+});
+document.getElementById("choice2").addEventListener("click", function () {
+	     if (chosen) {return;}
+            document.getElementById("choice-image2").innerText = "X";
+	    chose = true;
+}); 
+document.getElementById("choice3").addEventListener("click", function () {
+	     if (chosen) {return;}
+            document.getElementById("choice-image3").innerText = "O";
+	    chosen = true;
+});
+document.getElementById("choice4").addEventListener("click", function () {
+             if (chosen) {return;}
+            document.getElementById("choice-image4").innerText = "X";
+	    chosen = true;
+});
+</script>
+
+</body>
+</html>
