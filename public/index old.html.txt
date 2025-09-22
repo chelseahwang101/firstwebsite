@@ -1,17 +1,15 @@
 <html> 
 <head>
-<title> Korean American History Quiz </title>
+<title> Not sample practice </title>
 <link rel="stylesheet" type="text/css" href="style.css" />
-<link rel="icon" type="image/x-icon" href="KRflag.png">
 </head>
 <body>
 <h1> This page</h1>
 <h2>Section 1</h2>
 <h3> Subsection 1</h3>
-<h6> Korean American History Quiz
+<h6> Here is the text of the webpage.
 <p> Test Your History Knowledge 
-<img src="Animated-Flag-South-Korea.gif"width=450>
-<script> console.log ("5");</script>
+<img src="pexels-photo-1108099.webp"width=800>
 <a href="second.html">Second page</a>
 <a href="third.html">third page</a>
 <a href="fourth.html">fourth page</a>

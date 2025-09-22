@@ -54,7 +54,7 @@
     <div class="choices-container">
         <div class="choice" id="choice1">
             <div class="choice-button">A</div>
-            <div class="choice-image" id="choice-image1">To escape war</div>
+            <div class="choice-image" id="choice-image1">To work on sugar plantations</div>
         </div>
         <div class="choice" id="choice2">
             <div class="choice-button">B</div>
@@ -62,7 +62,7 @@
         </div>
         <div class="choice" id="choice3">
             <div class="choice-button">C</div>
-            <div class="choice-image"  id="choice-image3">To work on sugar plantations</div>
+            <div class="choice-image"  id="choice-image3">To escape war</div>
         </div>
         <div class="choice" id="choice4">
             <div class="choice-button">D</div>
@@ -75,7 +75,7 @@
 var chosen = false ;
 document.getElementById("choice1").addEventListener("click", function () {
 	    if (chosen) {return;}
-            document.getElementById("choice-image1").innerText = "X";
+            document.getElementById("choice-image1").innerText = "O";
 	    chosen = true;
 });
 document.getElementById("choice2").addEventListener("click", function () {
@@ -85,7 +85,7 @@ document.getElementById("choice2").addEventListener("click", function () {
 }); 
 document.getElementById("choice3").addEventListener("click", function () {
 	     if (chosen) {return;}
-            document.getElementById("choice-image3").innerText = "O";
+            document.getElementById("choice-image3").innerText = "X";
 	    chosen = true;
 });
 document.getElementById("choice4").addEventListener("click", function () {

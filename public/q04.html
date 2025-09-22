@@ -62,11 +62,11 @@
         </div>
         <div class="choice" id="choice3">
             <div class="choice-button">C</div>
-            <div class="choice-image"  id="choice-image3">The first president of South Korea</div>
+            <div class="choice-image"  id="choice-image3">A U.S senate of Korean descent\</div>
         </div>
         <div class="choice" id="choice4">
             <div class="choice-button">D</div>
-            <div class="choice-image"  id="choice-image4">A U.S. senator of Korean descent</div>
+            <div class="choice-image"  id="choice-image4">The first president of South Korea</div>
         </div>
     </div>
 </div>
@@ -85,12 +85,12 @@ document.getElementById("choice2").addEventListener("click", function () {
 }); 
 document.getElementById("choice3").addEventListener("click", function () {
 	     if (chosen) {return;}
-            document.getElementById("choice-image3").innerText = "O";
+            document.getElementById("choice-image3").innerText = "X";
 	    chosen = true;
 });
 document.getElementById("choice4").addEventListener("click", function () {
              if (chosen) {return;}
-            document.getElementById("choice-image4").innerText = "X";
+            document.getElementById("choice-image4").innerText = "O";
 	    chosen = true;
 });
 </script>

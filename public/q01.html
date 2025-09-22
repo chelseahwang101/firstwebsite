@@ -59,11 +59,11 @@
         </div>
         <div class="choice" id="choice2">
             <div class="choice-button">B</div>
-            <div class="choice-image" id="choice-image2">1945</div>
+            <div class="choice-image" id="choice-image2">1903</div>
         </div>
         <div class="choice" id="choice3">
             <div class="choice-button">C</div>
-            <div class="choice-image"  id="choice-image3">1903</div>
+            <div class="choice-image"  id="choice-image3">1945</div>
         </div>
         <div class="choice" id="choice4">
             <div class="choice-button">D</div>
@@ -81,12 +81,12 @@ document.getElementById("choice1").addEventListener("click", function () {
 });
 document.getElementById("choice2").addEventListener("click", function () {
 	     if (chosen) {return;}
-            document.getElementById("choice-image2").innerText = "X";
+            document.getElementById("choice-image2").innerText = "O";
 	    chose = true;
 }); 
 document.getElementById("choice3").addEventListener("click", function () {
 	     if (chosen) {return;}
-            document.getElementById("choice-image3").innerText = "O";
+            document.getElementById("choice-image3").innerText = "X";
 	    chosen = true;
 });
 document.getElementById("choice4").addEventListener("click", function () {
