@@ -1,30 +1,76 @@
-<html> 
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title> Korean American History Quiz </title>
-<link rel="stylesheet" type="text/css" href="style.css" />
-<link rel="icon" type="image/x-icon" href="KRflag.png">
+  <meta charset="UTF-8">
+  <title>Korean American History Quiz</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f8f9fa;
+      text-align: center;
+    }
+
+    header {
+      background-color: #003366;
+      color: white;
+      padding: 20px 0;
+    }
+
+    h1 {
+      margin: 0;
+    }
+
+    .intro {
+      margin: 30px auto;
+      max-width: 600px;
+      font-size: 18px;
+      color: #333;
+    }
+
+    .quiz-buttons {
+      margin-top: 20px;
+    }
+
+    button {
+      background-color: #0066cc;
+      border: none;
+      color: pink;
+      padding: 12px 20px;
+      margin: 10px;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #004d99;
+    }
+
+    footer {
+      margin-top: 40px;
+      padding: 15px;
+      background-color: #eee;
+      font-size: 14px;
+    }
+  </style>
 </head>
 <body>
-<h1> This page</h1>
-<h2>Section 1</h2>
-<h3> Subsection 1</h3>
-<h6> Korean American History Quiz
-<p> Test Your History Knowledge 
-<img src="Animated-Flag-South-Korea.gif"width=450>
-<script> console.log ("5");</script>
-<a href="second.html">Second page</a>
-<a href="third.html">third page</a>
-<a href="fourth.html">fourth page</a>
-<a href="q01.html"> question 1</a>
-<a href="q02.html"> question 2</a>
-<a href="q03.html"> question 3</a>
-<a href="q04.html"> question 4</a>
-<a href="q05.html"> question 5</a>
-<a href="q06.html"> question 6</a>
-<a href="q07.html"> question 7</a>
-<a href="q08.html"> question 8</a>
-<a href="q09.html"> question 9</a>
-<a href="q10.html"> question 10</a>
-</h6>
+  <header>
+    <h1>Korean American History Quiz</h1>
+    <p>Dive Into Korean and American History – Learn and Test Your Knowledge</p>
+  </header>
+
+  <div class="intro">
+    <p>Welcome! This site is designed to help you explore and test your knowledge of Korean American history.  
+       Choose a quiz below to get started:</p>
+  </div>
+
+  <div class="quiz-buttons">
+    <a href="q01.html"><button onclick="alert('Start Beginner Quiz')">Beginner Quiz</button></a>
+    <button onclick="alert('Start Intermediate Quiz')">Intermediate Quiz</button>
+    <button onclick="alert('Start Advanced Quiz')">Advanced Quiz</button>
+  </div>
+
 </body>
 </html>
