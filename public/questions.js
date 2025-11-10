@@ -1,0 +1,36 @@
+let x01 = {question : "When did the first wave of Korean immigrants arrive in the United States?",
+answers : {A : "1789",
+    B : "1903",
+    C : "1945",
+    D : "1965"},
+correct : "B"}
+let x02 = {question : "What was the primary reason for early Korean immigration to Hawaii in the early 1900s?",
+answers : {A : "To work on sugar plantations",
+    B : "To study abroad",
+    C : "To escape war",
+    D : "To establish political relations"},
+correct : "A"}
+let x03= {question : "Which U.S. immigration law led to a major increase in Korean immigration after 1965?",
+answers : {A : "The Chinese Exclusion Acts",
+    B : "The Naturalization Act",
+    C : "The Hart-Celler Actr",
+    D : "TThe McCarran Act"},
+correct : "C"}
+let x04= {question : "Who was Syngman Rhee, a key figure in Korean American history?",
+answers : {A : " K-pop singer",
+    B : "The first Korean immigrant to the U.S",
+    C : "A U.S senate of Korean descent",
+    D : "The first president of South Korea"},
+correct : "D"}
+let x05= {question : "Which city has the largest Korean American population in the U.S.?",
+answers : {A : " San Francisco",
+    B : "New York City",
+    C : "Los Angeles",
+    D : "Seattle"},
+correct : "C"}
+let x06= {question : "Which city has the largest Korean American population in the U.S.?",
+answers : {A : " San Francisco",
+    B : "New York City",
+    C : "Los Angeles",
+    D : "Seattle"},
+correct : "C"}
