@@ -49,24 +49,25 @@
 <body>
 
 <div class="quiz-container">
-    <h3>What was the primary reason for early Korean immigration to Hawaii in the early 1900s?</h3>
+    <h3>When did the first wave of Korean immigrants arrive in the United States?
+</h3>
 
     <div class="choices-container">
         <div class="choice" id="choice1">
             <div class="choice-button">A</div>
-            <div class="choice-image" id="choice-image1">To work on sugar plantations</div>
+            <div class="choice-image" id="choice-image1">1789 </div>
         </div>
         <div class="choice" id="choice2">
             <div class="choice-button">B</div>
-            <div class="choice-image" id="choice-image2">To study abroad</div>
+            <div class="choice-image" id="choice-image2">1903</div>
         </div>
         <div class="choice" id="choice3">
             <div class="choice-button">C</div>
-            <div class="choice-image"  id="choice-image3">To escape war</div>
+            <div class="choice-image"  id="choice-image3">1945</div>
         </div>
         <div class="choice" id="choice4">
             <div class="choice-button">D</div>
-            <div class="choice-image"  id="choice-image4">To establish political relations</div>
+            <div class="choice-image"  id="choice-image4">1965</div>
         </div>
     </div>
 </div>
@@ -75,12 +76,12 @@
 var chosen = false ;
 document.getElementById("choice1").addEventListener("click", function () {
 	    if (chosen) {return;}
-            document.getElementById("choice-image1").innerText = "O";
+            document.getElementById("choice-image1").innerText = "X";
 	    chosen = true;
 });
 document.getElementById("choice2").addEventListener("click", function () {
 	     if (chosen) {return;}
-            document.getElementById("choice-image2").innerText = "X";
+            document.getElementById("choice-image2").innerText = "O";
 	    chose = true;
 }); 
 document.getElementById("choice3").addEventListener("click", function () {
@@ -94,7 +95,7 @@ document.getElementById("choice4").addEventListener("click", function () {
 	    chosen = true;
 });
 </script>
-<a href="q03.html">next question</a>
+<a href="q02.html">next question</a>
 
 </body>
 </html>
