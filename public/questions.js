@@ -1,4 +1,4 @@
-let x=new Array(21);
+let x=new Array(41);
 x[1] = {question : "When did the first wave of Korean immigrants arrive in the United States?",
 answers : {A : "1789",
     B : "1903",
@@ -127,3 +127,143 @@ answers : {A : "Eric Nam",
           C : "Michelle Zauner",
           D : "Amber Liu"},
 correct : "C"};
+x[21] = {question : "What writing system is used for the Korean language?",
+answers : {A : "Kanji",
+    B : "Hiragana",
+    C : "Hangul",
+    D : "Pinyin"},
+correct : "C"}
+
+x[22] = {question : "Who created Hangul?",
+answers : {A : "King Gojong",
+    B : "King Sejong",
+    C : "Yi Sun-sin",
+    D : "Confucius"},
+correct : "B"}
+
+x[23] = {question : "What does Hangul consist of?",
+answers : {A : "Symbols only",
+    B : "Alphabetic letters",
+    C : "Syllable blocks",
+    D : "Pictures"},
+correct : "C"}
+
+x[24] = {question : "How many basic consonants are in Hangul?",
+answers : {A : "10",
+    B : "14",
+    C : "21",
+    D : "28"},
+correct : "B"}
+
+x[25] = {question : "What is the Korean word for 'hello' in formal speech?",
+answers : {A : "Annyeong",
+    B : "Annyeonghaseyo",
+    C : "Yoboseyo",
+    D : "Kamsahamnida"},
+correct : "B"}
+
+x[26] = {question : "What does 'kamsahamnida' mean?",
+answers : {A : "Sorry",
+    B : "Hello",
+    C : "Thank you",
+    D : "Goodbye"},
+correct : "C"}
+
+x[27] = {question : "Why are there different speech levels in Korean?",
+answers : {A : "Grammar difficulty",
+    B : "Age and social hierarchy",
+    C : "Dialect differences",
+    D : "Gender"},
+correct : "B"}
+
+x[28] = {question : "Which sentence ending is most formal?",
+answers : {A : "-yo",
+    B : "-da",
+    C : "-imnida",
+    D : "-e"},
+correct : "C"}
+
+x[29] = {question : "What is a common challenge for Korean learners?",
+answers : {A : "Alphabet memorization",
+    B : "Honorifics and speech levels",
+    C : "Pronunciation only",
+    D : "Vocabulary size"},
+correct : "D"}
+
+x[30] = {question : "What direction is Hangul written?",
+answers : {A : "Right to left",
+    B : "Top to bottom",
+    C : "Left to right",
+    D : "Diagonally"},
+correct : "C"}
+
+
+x[31] = {question : "What is the Korean language called in Korean?",
+answers : {A : "Hanguk",
+    B : "Hangul",
+    C : "Hangugeo",
+    D : "Joseonmal"},
+correct : "C"}
+
+x[32] = {question : "Who created the Korean alphabet, Hangul?",
+answers : {A : "King Gojong",
+    B : "King Sejong",
+    C : "Confucius",
+    D : "Admiral Yi"},
+correct : "B"}
+
+x[33] = {question : "Why was Hangul created?",
+answers : {A : "To replace Chinese characters worldwide",
+    B : "To make reading and writing easier for common people",
+    C : "To promote trade",
+    D : "To modernize technology"},
+correct : "B"}
+
+x[34] = {question : "How many basic consonants are in Hangul?",
+answers : {A : "10",
+    B : "14",
+    C : "19",
+    D : "24"},
+correct : "B"}
+
+x[35] = {question : "How many basic vowels are in Hangul?",
+answers : {A : "5",
+    B : "7",
+    C : "10",
+    D : "14"},
+correct : "C"}
+
+x[36] = {question : "Hangul letters are grouped into",
+answers : {A : "Words",
+    B : "Sentences",
+    C : "Syllable blocks",
+    D : "Paragraphs"},
+correct : "C"}
+
+x[37] = {question : "Hangul is often described as scientific because",
+answers : {A : "It uses numbers",
+    B : "Letter shapes reflect how sounds are made",
+    C : "It was created recently",
+    D : "It uses symbols from nature only"},
+correct : "B"}
+
+x[38] = {question : "Which writing system influenced Korean before Hangul?",
+answers : {A : "Latin",
+    B : "Arabic",
+    C : "Chinese characters",
+    D : "Cyrillic"},
+correct : "C"}
+
+x[39] = {question : "Which country primarily uses Hangul today?",
+answers : {A : "China",
+    B : "Japan",
+    C : "South Korea",
+    D : "Vietnam"},
+correct : "C"}
+
+x[40] = {question : "Korean is classified as which type of language?",
+answers : {A : "Romance",
+    B : "Germanic",
+    C : "Agglutinative",
+    D : "Semitic"},
+correct : "C"}
