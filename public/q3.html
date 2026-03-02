@@ -3,49 +3,7 @@
 <head>
 <script src="questions3.js"></script>
     <title>Quiz Question</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-        }
-
-        .quiz-container {
-            width: 400px;
-            margin: 20px auto;
-            border: white;
-            padding: 15px;
-            background-color: pink;
-        }
-
-        .choices-container {
-            margin-top: 10px;
-        }
-
-        .choice {
-            display: flex;
-            margin-bottom: 8px;
-            background-color: white;
-            border: white;
-            padding: 5px;
-        }
-
-        .choice-button {
-            width: 40px;
-            height: 40px;
-            background-color: lightblue;
-            text-align: center;
-            line-height: 40px;
-            font-weight: bold;
-            margin-right: 8px;
-        }
-
-        .choice-image {
-            flex: 1;
-            background-color: white;
-            text-align: center;
-            line-height: 40px;
-            color: pink;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -114,7 +72,7 @@ document.getElementById("choice4").addEventListener("click", function () {
 	    chosen = true;
 });
 </script>
-<a href="q03.html">next question</a>
-
+<div class="quiz-buttons">
+<button onclick="sayButtoning()">next question </button></div>
 </body>
 </html>
