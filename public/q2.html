@@ -3,49 +3,7 @@
 <head>
 <script src="questions2.js"></script>
     <title>Quiz Question</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-        }
-
-        .quiz-container {
-            width: 400px;
-            margin: 20px auto;
-            border: white;
-            padding: 15px;
-            background-color: pink;
-        }
-
-        .choices-container {
-            margin-top: 10px;
-        }
-
-        .choice {
-            display: flex;
-            margin-bottom: 8px;
-            background-color: white;
-            border: white;
-            padding: 5px;
-        }
-
-        .choice-button {
-            width: 40px;
-            height: 40px;
-            background-color: lightblue;
-            text-align: center;
-            line-height: 40px;
-            font-weight: bold;
-            margin-right: 8px;
-        }
-
-        .choice-image {
-            flex: 1;
-            background-color: white;
-            text-align: center;
-            line-height: 40px;
-            color: pink;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -73,45 +31,49 @@
 </div>
 
 <script>
-let a= Math.floor(Math.random() * 40+1);
-let y=x[a];
-document.getElementById("q").innerHTML = y["question"];
-document.getElementById("A").innerHTML = y["answers"]["A"];
-document.getElementById("B").innerHTML = y["answers"]["B"];
-document.getElementById("C").innerHTML = y["answers"]["C"];
-document.getElementById("D").innerHTML = y["answers"]["D"];
+let a=0;
+let y=null;
 var chosen = false ;
+var correct = 0;
+var incorrect =  0;
+function sayButtoning() {
+
+	a= Math.floor(Math.random() * 40+1);
+	y=x[a];
+	document.getElementById("q").innerHTML = y["question"];
+	document.getElementById("A").innerHTML = y["answers"]["A"];
+	document.getElementById("B").innerHTML = y["answers"]["B"];
+	document.getElementById("C").innerHTML = y["answers"]["C"];
+	document.getElementById("D").innerHTML = y["answers"]["D"];
+	chosen = false ;}
+sayButtoning();
+function verify(c) {
+	if (chosen) {return;}
+	if (y["correct"]==c)
+ 	    {document.getElementById(c).innerText = "O";
+	     correct= correct+1;}
+	else{
+             document.getElementById(c).innerText = "X";
+	     incorrect= incorrect+1;}
+	chosen = true;
+	document.getElementById("o").innerHTML=Math.round(correct/(correct+incorrect)*100)+"%";
+}
+
+
 document.getElementById("choice1").addEventListener("click", function () {
-	    if (chosen) {return;}
-	    if (y["correct"]=="A")
- 	    {document.getElementById("choice-image1").innerText = "O";}
-	    else
-            document.getElementById("choice-image1").innerText = "X";
-	    chosen = true;
+	verify("A");
+	  
+	    
 });
 document.getElementById("choice2").addEventListener("click", function () {
-	     if (chosen) {return;}
-	    if (y["correct"]=="B")
-            {document.getElementById("choice-image2").innerText = "O";}
-	    else
-	    {document.getElementById("choice-image2").innerText = "X";}
-	    chosen = true;
+	verify("B");
+	   
 }); 
 document.getElementById("choice3").addEventListener("click", function () {
-	     if (chosen) {return;}
-	    if (y["correct"]=="C")
-	    {document.getElementById("choice-image3").innerText = "O";}
-	    else
-            document.getElementById("choice-image3").innerText = "X";
-	    chosen = true;
+	verify("C");
 });
 document.getElementById("choice4").addEventListener("click", function () {
-             if (chosen) {return;}
-	    if (y["correct"]=="D")
-	    {document.getElementById("choice-image4").innerText = "O";}
-	    else
-            document.getElementById("choice-image4").innerText = "X";
-	    chosen = true;
+        verify("D");
 });
 </script>
 <div class="quiz-buttons">
