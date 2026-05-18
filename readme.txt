@@ -1,9 +1,15 @@
-There are five webpages in this folder.
-1. index.html shows how to use <img src="...">
-width=... height=...> to put an image in a page. 
-It also contains links to all the other pages.
-It also shows how to use <title>,<head>,<body>, and <html> tags.
-2. second.html shows how to use <a href="..."> to link back to index or any other page. We also see how to use <h1> through <h7> to make from biggest to smallest text. 
-3. third.html showcases how to use <link rel=stylesheet" href="style.css"> to get CSS code from another file for styling the page.
-4. fourth.html showcases how to use flex-container to make a flexible container for <div> elements on the page, as well as modify their text color and background color
-5. fifth.html showcases how to use javascript with the <button type-"button" and other various ways to use with button functions. It included changing colors, changing images, changing text sizes, changing background color, showing and hiding the date, and making a window alert. 
+The q.html operates by showing how the multiple choice functions with the correct and wrong symbol. 
+The elements of class choice whose IDs are choice1 through choice4 are targeted by the javascript.
+The Korean-American History quiz is q.html. 
+Every time you answer a question your percentage is shown at the top. 
+Randomizes question from 1 through 40. 
+
+q2.html and q3.html operate exactly the same except q2.html is about society and culture while q3.html is about language. 
+
+questions.js lists all the questions from the Korean-American History quiz. 
+questions2.js lists all the questions from the Korean-American Society & Culture quiz.
+questions3.js lists all the questions from the Korean Language quiz. 
+
+style.css operates the color theme of the quizzes. 
+
+In index.html it gives an option on which quiz I want to take by giving the three options. 
