@@ -1,64 +1,85 @@
-h1{ font-size: 72pt ;}
-h2{ font-size: 60pt ;}
-h4{ font-size: 36pt ;}
-h6{ font-size: 14pt ;}
-        body {
-            font-family: Arial, sans-serif;
-text-align: center;
-        }
+h1 { 
+	font-size: 72pt;
+ } 
 
-        .quiz-container {
-            width: 400px;
-            margin: 20px auto;
-            border: white;
-            padding: 15px;
-            background-color: pink;
-        }
+h2 { 
+	font-size: 60pt; 
+}
+ h4 { 
+	font-size: 36pt; 
+} h6 { font-size: 14pt; }
+ body { 
+	font-family: Arial, sans-serif; 
+	text-align: center; 
+	background-color: #ffe6f2; 
+} 
 
-        .choices-container {
-            margin-top: 10px;
-        }
+.quiz-container {
+	 width: 400px; 
+	margin: 20px auto; 
+	padding: 20px; 
+	background-color: pink; 
+	border-radius: 15px;
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+} 
 
-        .choice {
-            display: flex;
-            margin-bottom: 8px;
-            background-color: white;
-            border: white;
-            padding: 5px;
-        }
- .quiz-buttons {
-      margin-top: 20px;
-    }
+.choices-container { 
+	margin-top: 10px;
+ } 
 
-    button {
-      background-color: #0066cc;
-      border: none;
-      color: pink;
-      padding: 12px 20px;
-      margin: 10px;
-      font-size: 16px;
-      border-radius: 8px;
-      cursor: pointer;
-    }
+.choice {
+	display: flex;
+	align-items: center;
+	margin-bottom: 12px; 
+	background-color: white; 
+	border: 3px solid #ff66b2; 
+	border-radius: 12px; 
+	padding: 10px; 
+	box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.15);
+ } 
 
-    button:hover {
-      background-color: #004d99;
-    }
+.quiz-buttons { 
+	margin-top: 20px;
+ } 
 
-        .choice-button {
-            width: 40px;
-            height: 40px;
-            background-color: lightblue;
-            text-align: center;
-            line-height: 40px;
-            font-weight: bold;
-            margin-right: 8px;
-        }
+button { 
+	background-color: #ff4da6;
+	border: none; 
+	color: white; 
+	padding: 14px 24px; 
+	margin: 10px; 
+	font-size: 18px; 
+	font-weight: bold; 
+	border-radius: 10px; 
+	cursor: pointer; 
+	transition: 0.3s; 
+} 
 
-        .choice-image {
-            flex: 1;
-            background-color: white;
-            text-align: center;
-            line-height: 40px;
-            color: pink;
-        }
+button:hover { 
+	
+	background-color: #e60073;
+	transform: scale(1.05); 
+} 
+
+.choice-button { 
+	width: 45px; 
+	height: 45px; 
+	background-color: #66ccff; 
+	color: white; 
+	text-align: center; 
+	line-height: 45px; 
+	font-weight: bold; 
+	font-size: 20px; 
+	border-radius: 50%; 
+	margin-right: 12px; 
+} 
+
+.choice-image { 
+	flex: 1;
+	background-color: white; 
+	text-align: center; 
+	line-height: 40px; 
+	color: black; 
+	font-size: 18px;
+	 font-weight: bold; 
+}
