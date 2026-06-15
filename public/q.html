@@ -2,7 +2,7 @@
 <html>
 <head>
 <script src="questions.js"></script>
-    <title>Quiz Question</title>
+    <title>Korean-American History Quiz</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -45,6 +45,10 @@ function sayButtoning() {
 	document.getElementById("B").innerHTML = y["answers"]["B"];
 	document.getElementById("C").innerHTML = y["answers"]["C"];
 	document.getElementById("D").innerHTML = y["answers"]["D"];
+	document.getElementById("A").style.color="black";
+	document.getElementById("B").style.color="black";
+	document.getElementById("C").style.color="black";
+	document.getElementById("D").style.color="black";
 	chosen = false ;}
 sayButtoning();
 function verify(c) {
@@ -54,6 +58,7 @@ function verify(c) {
 	     correct= correct+1;}
 	else{
              document.getElementById(c).innerText = "X";
+	     document.getElementById(y["correct"]).style.color="green";
 	     incorrect= incorrect+1;}
 	chosen = true;
 	document.getElementById("o").innerHTML=Math.round(correct/(correct+incorrect)*100)+"%";

@@ -2,14 +2,13 @@
 <html>
 <head>
 <script src="questions2.js"></script>
-    <title>Quiz Question</title>
+    <title>Korean-American Society & Culture Quiz</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <div class="accuracy" id="o"></div>
-
 <div class="quiz-container">
-	<h3><div id="q"></div></h3>
+    <h3><div id="q"></div></h3>
 
     <div class="choices-container">
         <div class="choice" id="choice1">
@@ -46,6 +45,10 @@ function sayButtoning() {
 	document.getElementById("B").innerHTML = y["answers"]["B"];
 	document.getElementById("C").innerHTML = y["answers"]["C"];
 	document.getElementById("D").innerHTML = y["answers"]["D"];
+	document.getElementById("A").style.color="black";
+	document.getElementById("B").style.color="black";
+	document.getElementById("C").style.color="black";
+	document.getElementById("D").style.color="black";
 	chosen = false ;}
 sayButtoning();
 function verify(c) {
@@ -55,6 +58,7 @@ function verify(c) {
 	     correct= correct+1;}
 	else{
              document.getElementById(c).innerText = "X";
+	     document.getElementById(y["correct"]).style.color="green";
 	     incorrect= incorrect+1;}
 	chosen = true;
 	document.getElementById("o").innerHTML=Math.round(correct/(correct+incorrect)*100)+"%";
@@ -77,8 +81,9 @@ document.getElementById("choice4").addEventListener("click", function () {
         verify("D");
 });
 </script>
-<div class="quiz-buttons">
-<button onclick="sayButtoning()">next question </button></div>
+<div class="quiz-buttons"> 
+	<button onclick="sayButtoning()">Next Question ➜</button>
+</div>
 
 </body>
 </html>
